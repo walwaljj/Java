@@ -24,7 +24,7 @@ public class Test {
 			
 			
 			}if(m>12){
-				System.out.println("잘못입력하였습니다.");
+				System.out.println("잘못입력하였습니다."); 
 		}
 
 	}
