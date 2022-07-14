@@ -10,7 +10,7 @@ public class Sub extends Super{
 		System.out.println("func()@@@");
 	}
 	//Overload
-	public String func(int a) {
+	public String func(int a) {//매개변수를 다르게 만듦.
 		return "func():a="+a;
 	}
 }

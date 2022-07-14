@@ -1,5 +1,5 @@
 package day08;
-
+//Superman cls 는 sub cls라부름.
 public class Superman extends Human{//human 을 상속함. 코드작성 하지않아도 사용가능
 
 	int power;
