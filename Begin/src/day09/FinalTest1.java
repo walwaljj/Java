@@ -14,7 +14,7 @@ final class Sub extends Super{
 	
 	//오버라이드 - 지정자는 같거나 크게 (private [x])
 	protected void foo() {
-		System.out.println("sub's foo()");
+		//System.out.println("sub's foo()");
 	}
 	
 	

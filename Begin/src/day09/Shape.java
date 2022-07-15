@@ -6,7 +6,8 @@ package day09;
 public abstract  class Shape {
 	int x,y;// 일반 멤버 변수
 	public String getInfo() {
-		return " 나는 도형 클래스입니다.";
+		String info = " 나는 도형 클래스입니다.";
+		return info;
 	}
 	abstract public void area (int a, int b);//메소드 헤더만 선언하는것을 추상메서드라함
 	// abstract를 붙혀야한다. 

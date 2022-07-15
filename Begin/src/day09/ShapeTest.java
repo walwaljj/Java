@@ -3,6 +3,9 @@ package day09;
 public class ShapeTest {
 
 	public static void main(String[] args) {
+		
+		
+		
 		System.out.println(" 각 도형의 면적을 구해 봅시다");
 		System.out.println("가로 : "+7+", 세로 : " +8+"--------");
 		
@@ -11,7 +14,7 @@ public class ShapeTest {
 		Triangle ta =new Triangle();
 		ta.area(7,8);
 		System.out.println("반지름 : 8인 원의 면적--------");
-		//Circle c = new SubCircle();[x]
+		//Circle c = new Circle();//ㄱ
 		//추상클래스는 타입을 선언할 수 있으나, new로 객체 생성을 할수없다.
 		//c.area(8);[x]
 		//SubCircle에서 area
@@ -26,12 +29,12 @@ public class ShapeTest {
 		 */
 		Shape s[] = {rt,ta,c,c2};
 		
-		//int 2개짜리는 
-		//Subcircle 소속은 int 1개라 
+		//(int x, int y) int 2개짜리
+		//circle은 int 1개라 
 		
-		for(int i =0; i<s.length ;i++) {
-			System.out.println(s[i]);
-		}
+		//for(int i =0; i<s.length ;i++) {
+		//	System.out.println(s[i]);
+		//}
 		for(int i=0;i<s.length;i++) {
 			if(i<2) {
 				s[i].area(20,30);

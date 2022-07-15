@@ -16,7 +16,6 @@ public class FinalTest3 {
 		MyFinal a=new MyFinal();
 		System.out.println(a.x);// static 이 아니면 변수에 담아주고 출력
 		System.out.println(MyFinal.NONE);//static 은 클래스명 . NONE
-		
 		a.x=20;
 		System.out.println(a.x);
 		//Myfinal.NONE = 10; ==> final 변수는 값을 변경할 수 없다.

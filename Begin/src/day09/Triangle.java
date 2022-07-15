@@ -8,7 +8,13 @@ public class Triangle extends Shape {
 		int m = (x*y)/2;
 		System.out.println(m);
 		System.out.println((x*y)/2);
+		
+		Shape s = new Triangle();
+		System.out.println(s.getInfo());
+		
 	}
+	
+
 	
 	
 	

@@ -16,7 +16,7 @@ class SubDemo extends SuperDemo{
 	//오버라이딩 하기
 	@Override
 	void sub() {
-		System.out.println("dd");
+		System.out.println("SubDemo's sub");
 	}
 	//@Override
 	//final void bar() {	//final +method는 오버라이딩할수없다.
