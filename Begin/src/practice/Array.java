@@ -16,12 +16,11 @@ public class Array {
 		
 		
 		char [] ch = new char[26];
-		char ch_a = 'A';
+		char ch_a = 'a';
 		for(int i = 0; i<ch.length;i++) {
 			ch[i]=ch_a++;
 			System.out.println(ch[i]);
 		}
-		
 		
 		//알파벳 소문자를 2글자씩 13줄(13행 2열)로 출력하는 프로그램 2차원배열
 		
