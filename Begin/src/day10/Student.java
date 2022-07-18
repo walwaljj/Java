@@ -31,4 +31,10 @@ public class Student {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		Student s = (Student)obj;
+		return this.name==s.name &&this.id==s.id;
+	}
 }

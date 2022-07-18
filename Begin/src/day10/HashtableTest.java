@@ -11,7 +11,7 @@ package day10;
 
 import java.util.*;
 public class HashtableTest {
-
+				//ㄴ사전적 개념?
 	public static void main(String[] args) {
 		Hashtable<String, Integer> h1=new Hashtable<>();
 		//key 값은 String value 값은 Integer 
