@@ -47,8 +47,8 @@ public class SchoolApp {
 		System.out.println("======================");
 		System.out.println("[1]......등   록.......");
 		System.out.println("[2]......출   력.......");
-		System.out.println("[3]......검   색.......");
-		System.out.println("[4]......삭   제.......");
+		System.out.println("[3]......검   색.......");//Hash
+		System.out.println("[4]......삭   제.......");//Hash
 		System.out.println("[9]......종   료.......");
 		System.out.println("======================");
 		System.out.println("  메뉴 번호를 입력하세요.  ");
@@ -101,6 +101,10 @@ public class SchoolApp {
 		
 
 			
+	}
+	
+	public void search() {
+		
 	}
 	
 	//////출력
