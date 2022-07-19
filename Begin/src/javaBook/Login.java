@@ -1,4 +1,4 @@
-package practice;
+package javaBook;
 
 import java.util.*;
 
@@ -28,6 +28,7 @@ public class Login {
 			String pwd = sc.next();
 			if(realPwd.equals(new String(pwd))) {
 				mb.login();
+				break;
 			}else {
 				System.out.println("비밀번호가 일치하지 않습니다.");
 				continue;

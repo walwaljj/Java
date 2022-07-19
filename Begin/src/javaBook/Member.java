@@ -1,4 +1,4 @@
-package practice;
+package javaBook;
 /**아이디 등록
  * */
 public class Member {
@@ -33,6 +33,7 @@ public class Member {
 	
 	public void login() {
 		System.out.println(this.myId+" 님 환영합니다!");
+		
 	}
 	
 
