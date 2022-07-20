@@ -1,5 +1,6 @@
 package day12;
 import javax.swing.*;
+import java.io.*;
 import java.awt.*;
 import java.awt.event.*;
 
@@ -90,6 +91,25 @@ public class PongApp extends JFrame {
 				}finally {
 					tfName.setText("");
 					tfName.requestFocus();//입력 포커스 주기
+				}
+				
+			}else if(obj==btSave) {
+				//setTitle("save");
+				String content=ta.getText();
+				if(content.trim().isEmpty()) {//내용이 없으면
+					JOptionPane.showMessageDialog(p, "저장할 내용이 없습니다.");
+					return;
+				}
+				//내용이 있다면
+				String fileName="C:\\Users\\wjdtn\\Desktop\\__\\java";
+				try {
+					FileWriter fw=new FileWriter(fileName);
+					fw.write(content);
+					fw.flush();
+					fw.close();
+					setTitle(fileName+"에 저장 완료!");
+				}catch(IOException ex){
+					setTitle("파일 쓰기중 에러 : "+ex.getMessage());
 				}
 				
 				
