@@ -27,20 +27,19 @@ public class Wright {
 		System.out.println("[Y]        [N]");
 		
 		
+		String a=" ";
 		while(true){
-			String a=" ";
 			a=msc.next();
-			if(a!="y"&&a=="Y") {	
+			if(a=="y"&&a=="Y") {	
 				System.out.println("메일을 보냈습니다!");
 					break;
-			}else if(a=="n"&&a=="N") {
-				System.out.println("입력을 취소하고 돌아갑니다.");
 			}else{
-				//System.out.println("잘못 입력하셨습니다.");
-				//continue;
+				System.out.println("잘못 입력하셨습니다.");
+				continue;
 			}
-				
-			}
+			}if(a=="n"&&a=="N");
+		System.out.println("입력을 취소하고 돌아갑니다.");
+			
 	}
 
 	public static void main(String[] args) {
