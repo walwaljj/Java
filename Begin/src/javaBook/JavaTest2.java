@@ -67,7 +67,7 @@ public class JavaTest2 {
 		}
 		int scount=1;
 		int bcount=4;
-		
+	
 		while(bcount!=0) {
 		for(int i=0;i<bcount;i++) {
 			System.out.print(" ");
@@ -75,12 +75,33 @@ public class JavaTest2 {
 			System.out.print("*");
 		}for(int i=0;i<bcount;i++) {
 			System.out.print(" ");	
-			scount+=2;
-			bcount-=1;
-		}System.out.println();
-		
-	}
 
+		}System.out.println();
+		scount+=2;
+		bcount-=1;
+	}
+		int scount1=1;
+		int bcount1=4;
+		int lcount=0;
+		while(lcount<7) {
+			for(int i=0;i<bcount1;i++) {
+				System.out.print(" ");
+			}for(int i=0;i<scount1;i++) {
+				System.out.print("*");
+			}for(int i=0;i<bcount1;i++) {
+				System.out.print(" ");	
+			}System.out.println();
+			lcount ++;
+				if(lcount<4) {
+				scount1+=2;
+				bcount1-=1;
+				}else{
+					scount1-=2;
+					bcount1+=1;
+			}
+			
+			
+		}
 	}
 
 	
