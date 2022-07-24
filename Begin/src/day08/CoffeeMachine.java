@@ -22,7 +22,7 @@ public class CoffeeMachine {
 		this.coffee = coffee;
 		this.sugar = sugar;
 		int n = this.coffee+this.sugar;
-		System.out.println("설탕커피 나가요! 농도 : " +this.coffee+n);
+		System.out.println("설탕커피 나가요! 농도 : " +n);
 	}
 		
 	
@@ -36,12 +36,11 @@ public class CoffeeMachine {
 	}
 	
 	
-	public String creamCoffee(int coffee,int cream) {
-		this.coffee = coffee;
-		this.cream = cream;
-		String a = "크림 커피 나가요 ! :" +(this.coffee+this.cream);
-		return a;
-	}
+
+	public String creamCoffee(int coffee,int cream) { this.coffee = coffee;
+	 this.cream = cream; String a = "크림 커피 나가요 ! :" +(this.coffee+this.cream);
+	return a; }
+	
 		
 	public void creamCoffee(short coffee) {
 			this.coffee = coffee;
@@ -56,10 +55,12 @@ public class CoffeeMachine {
 		}
 	
 	public int makeTea(short cream, int coffee) {
-		this.makeTea(cream,coffee);//this.메소드() : 자기 자신의 메소드를 호출할때 사용한다.
+		this.cream=cream;
+		this.coffee=coffee;//this.메소드() : 자기 자신의 메소드를 호출할때 사용한다.
 		return (this.coffee+this.cream);
 
 	}
+
 	
 	
 	
