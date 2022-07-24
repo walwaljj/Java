@@ -1,24 +1,23 @@
 package test7_1min;
 
 public class Student {
-	int studentID=100 ;
+	int studentID ;
 	String name;
 	
 	public Student() {
 	
 	}
 	
-	public Student(int id, String name) {
-		id=id;
+	public Student(int studentID,String name) {
+		this.studentID=studentID;
 		this.name=name;
 	}
 
 	
 	
 	public void showStudentInfo() {
-		studentID++;
-
-		System.out.println(this.studentID+","+this.name);
+		
+		System.out.println(studentID+","+name);
 	}
 
 }
