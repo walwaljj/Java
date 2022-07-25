@@ -7,9 +7,9 @@ public class MainApp {
 	
 	public static void main(String[] args) {
 
-		Gujikja[] gujaArr = new Gujikja[20];//구직자 정보 저장공간 20할당
+		Gujikja[] gujaArr = new Gujikja[5];//구직자 정보 저장공간 할당
 		
-		Company[] compArr = new Company[10];//구인회사 정보 저장공간 10할당
+		Company[] compArr = new Company[3];//구인회사 정보 저장공간 할당
 	
 		Scanner sc = new Scanner(System.in);
 		String strMenuNo = "";
@@ -119,24 +119,8 @@ public class MainApp {
 			System.out.print("◆  암호 : ");
 			String passwd = sc.nextLine();
 			
-			
-			String name =" ";
-	
-			
-			boolean isNum=true;
-			while(isNum) {
-				for(int i=0;i<name.length();i++) {
-					System.out.print( "◆  성명 : ");
-					name = sc.nextLine();
-					char ch = name.charAt(i);
-					if(!(ch>='0'&&ch<='9')) { //숫자가 아닌 문자가 있다면	
-						isNum=false;
-					}String result=(isNum)? "숫자는 입력이 불가합니다.\n" : "";
-					System.out.print(result);
-				}
-			}
-		
-			
+			System.out.print( "◆  성명 : ");
+			String name = sc.nextLine();			
 			
 			String birthday = " ";
 			do {
@@ -212,9 +196,9 @@ public class MainApp {
 			boolean flag = false; 
 			
 			for(int i=0; i<gujaArr.length; i++) {
-				if( gujaArr[i] == null ) {
-					gujaArr[i] = guja;
-					flag = true;
+				if( gujaArr[i] == null ) {//gujaArr[i]번째에 null값이 아닐경우
+					gujaArr[i] = guja;//guja값을 ujaArr[i]번째에 값을 넣음
+					flag = true;//flag true초기화
 					break;
 				}
 			}
@@ -238,11 +222,10 @@ public class MainApp {
 			boolean flag = false;
 			
 			for(int i=0; i<gujaArr.length; i++) {
-				//유저 아이디와,비밀번호 일치시 로그인
-				if( gujaArr[i] != null && 
-					gujaArr[i].isExists(userid, passwd) ) {
+				if( gujaArr[i] != null && //배열 gujaArr[i]번째에 null값이아니고,입력한 값이 gujaArr[i]에 없을경우
+					gujaArr[i].isExists(userid, passwd) ) {//flag를 true값을 초기화하고
 					flag = true;
-					loginUser = gujaArr[i];
+					loginUser = gujaArr[i];//gujaArr[i]번째 값을 loginUser에 넣음
 					break;
 				}
 			}
@@ -297,8 +280,8 @@ public class MainApp {
 			boolean flag = false;
 			
 			for(int i=0; i<gujaArr.length; i++) {
-				if(gujaArr[i] != null &&  //검색할 이름과 배열에 저장된 이름이 일치 할때까지 주소넘김
-				   gujaArr[i].name.startsWith(searchName) )
+				if(gujaArr[i] != null &&  //배열에 null값과 배열에저장된값과 입력된 값이 일치하지 않을경우
+				   gujaArr[i].name.startsWith(searchName) )// falg값을 true로 초기화
 				{
 					flag = true;
 					gujaArr[i].showGujikInfo();
