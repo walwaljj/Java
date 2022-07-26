@@ -17,7 +17,8 @@ public class CarTest {
 		
 		bus.stop();
 		autoCar.stop();
-
+		
+		//Car c=new (Car)AutoCar();
 	}
 
 }
