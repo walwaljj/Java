@@ -1,5 +1,5 @@
 package Test9_2;
-
+import java.util.*;
 public class CarTest {
 
 	public static void main(String[] args) {
@@ -10,6 +10,9 @@ public class CarTest {
 		System.out.println("---사람이 운전하는 자동차---");
 		Car hisCar = new ManualCar();
 		hisCar.run();
+		
+
+		
 	}
 
 }
