@@ -21,8 +21,8 @@ public class CompletCalc extends Calaulator {
 		System.out.println("Calc 인터페이스를 구현하였습니다.");
 	}
 	
-	@Override
-	public void description() {
-		System.out.println("계산 끝 !");//부모 메서드 내용이 마음에안들면 재정의가능
-	}
+	/*
+	 * @Override public void description() { System.out.println("계산 끝 !");//부모 메서드
+	 * 내용이 마음에안들면 재정의가능 }
+	 */
 }
