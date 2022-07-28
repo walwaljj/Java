@@ -17,6 +17,9 @@ class Student{
 			}
 			return false;
 		}
+		public int hashCode() {
+			return studentId;
+		}
 	
 }
 public class EqualsTest {
@@ -46,6 +49,11 @@ public class EqualsTest {
 		else
 			System.out.println("s1과 s2은 다릅니다.");
 	
+		System.out.println("s1의 hashCode :"+s1.hashCode());
+		System.out.println("s2의 hashCode :"+s2.hashCode());
+		System.out.println("s1의 주소값 :"+System.identityHashCode(s1));
+		System.out.println("s2의 주소값 :"+System.identityHashCode(s2));
+		
 	}
 
 }
