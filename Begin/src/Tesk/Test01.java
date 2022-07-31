@@ -16,7 +16,7 @@ public class Test01 {
 				
 			}System.out.println();*/
 		Scanner sc=new Scanner(System.in);
-		int [] coinUnit = {500,100,50,10);
+		int [] coinUnit = {500,100,50,10};
 		System.out.println("가지고 있는 돈을 입력하세요==>");
 		int money = sc.nextInt();
 		System.out.println(money+"원");
