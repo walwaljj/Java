@@ -25,7 +25,9 @@ public class Gop {
 		int cost=sc.nextInt();
 		a=payment-cost;
 		for(int i = 0; i<money.length; i++ ) {
-			System.out.println(a/money[i]);
+			int ttl=a/money[i];
+			System.out.println(ttl);
+			ttl=ttl-a%money[i];
 			
 			
 		}

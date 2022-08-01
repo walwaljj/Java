@@ -1,4 +1,4 @@
-package cllection;
+package clolection;
 
 public class Member {
 	//속성
