@@ -8,7 +8,7 @@ public class MemberHashSet {
 		hashSet = new HashSet<Member>();
 	
 	}
-	public void addMemver(Member member) {
+	public void addMember(Member member) {
 		hashSet.add(member);
 	}
 	public boolean removeMemver(int memberId) {
