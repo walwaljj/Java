@@ -30,12 +30,20 @@ public class MemberArrayList {
 		}
 		System.out.println();
 	}
-	public void insertMember(Member member, int index) {
-		
-		for(Member a : arrayList ) //<= auto unboxing ,
-		sum+=a;
-		System.out.println("합계 : " + sum);
-			
-		
+	
+	public boolean removMember(int memberId) {
+		Iterator<Member> ir = arrayList.iterator();
+		while(ir.hasNext()) {
+			Member member = ir.next();
+			int tempId = member.getMemberId();
+			if(tempId == memberId) {
+				arrayList.remove(member);
+				return true;
+			}
+		}
+		System.out.println(memberId+"가 존재하지 않습니다.");
+		return false;
 	}
+		
+	
 }
