@@ -12,6 +12,7 @@ public class Hello {//클래스명과 파일명이 동일해야한다.
 	System.out.println("99\t88\t77");
 	System.out.println("역슬래시(\\)");
 	System.out.println("\'김소월\'님의 \"진달래꽃\"");
+	 System.out.println("1"+"2");
 	}
 
 }
