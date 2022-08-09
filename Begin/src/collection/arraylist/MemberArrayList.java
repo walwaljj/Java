@@ -56,7 +56,7 @@ public class MemberArrayList {
 		while(ir.hasNext()) {//  hasNext는 이후에 리스트안에 데이터가 있는지 확인하는 메서드(boolean타입)이며,
 							//	ir안에 요소가 있는동안 반복문을 수행(=>요소가 있다면 true)하겠다는 조건.
 			
-			Member member = ir.next();// hasNext가 다음요소를 체크한 후 다음 요소가있다면 next메서드로 반환하며,
+			Member member = ir.next();// hasNext가 다음요소를 체크한 후 다음 요소가 있다면 next메서드로 반환하며,
 										// 해당 데이터는 member변수로 저장------------------------------------------**
 			int tempId = member.getMemberId();//member 변수는 Member클래스형으로 , Member클래스의 get메소드를 거쳐 
 											// 데이터를 tempId에 저장.

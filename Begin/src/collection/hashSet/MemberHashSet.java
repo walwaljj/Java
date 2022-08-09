@@ -24,10 +24,11 @@ public class MemberHashSet {
 												//ir을 iterator()를 이용해 hashset을 순회함.
 		
 		while(ir.hasNext()) {//다음 자료형이 있을때까지 순회한다는 조건.
-			Member member = ir.next();// 회원을 하나씩 가지고옴.
-			int tempId = member.getMemberId();
-			if(tempId == memberId) {
-				hashSet.remove(member);
+			Member member = ir.next();// ir이 next를 만나 hashset변수를 돌아보고, member에 담음.
+			int tempId = member.getMemberId();//멤버클레스의 memberid를 가져옴
+												//(즉 hashset의 memberid를 가져와 tempid에 담음.
+			if(tempId == memberId) {//hashset의 멤버아이디와 removermember의 매개변수인 멤버아이디를 비교
+				hashSet.remove(member);//if문이 true라면 hashset 의 member를 제거함.
 				return true;
 			}
 		}
