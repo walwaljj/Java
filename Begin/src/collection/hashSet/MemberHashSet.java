@@ -1,32 +1,35 @@
-package collection.hashset;
+package collection.hashSet;
+
 import java.util.*;
 import collection.Member;
+
 public class MemberHashSet {
+	
 	private HashSet<Member> hashSet;
 	
 	public MemberHashSet() {
 		hashSet = new HashSet<Member>();
-	
 	}
+	
 	public void addMember(Member member) {
 		hashSet.add(member);
 	}
-	public boolean removeMemver(int memberId) {
-		Iterator<Member> ir = hashSet.iterator();
+	
+	public boolean removerMember(int memberId) {
+		Iterator<Member> ir=hashSet.iterator();
 		
 		while(ir.hasNext()) {
 			Member member = ir.next();
-			int tempId= member.getMemberId();
+			int tempId = member.getMemberId();
 			if(tempId == memberId) {
 				hashSet.remove(member);
 				return true;
 			}
 		}
-		System.out.println(memberId + "가 존재하지 않습니다.");
+		System.out.println(memberId + " 가 존재하지 않습니다.");
 		return false;
-		
-		
-		}
+	}
+	
 	public void showAllMember() {
 		for(Member member : hashSet) {
 			System.out.println(member);
