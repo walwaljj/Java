@@ -1,6 +1,6 @@
 package collection;
 
-import chapter12.Member;
+import java.util.*;
 
 public class Member implements Comparable<Member> {
 	private int memberId;
