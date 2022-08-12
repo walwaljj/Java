@@ -1,5 +1,5 @@
 package test12_1;
-import java.util.*;
+
 
 
 public class Student {
@@ -16,14 +16,20 @@ public class Student {
 	public int hashCode() {
 		return Integer.parseInt(num);
 	}
+	@Override
     public boolean equals(Object obj) {
     	
     	Student std = (Student)obj;
-        if(this.num == obj);
-        return ture;
+        if(this.num == std.num) {
+        	return true;
+        }else {
+        return false;
+        }
     }
+	
+	@Override
 	public String toString() {
-		String str = this.name+ " : " + this.num  ;
+		String str = name+ " : " + num  ;
 			return str;
 	}
 }
