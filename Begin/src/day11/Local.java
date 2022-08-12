@@ -7,23 +7,26 @@ package day11;
 public class Local {
 	String str= "멤버변수@@@";
 	
-	public void bar() {
-		class LocalInner{
+	public void bar() {//메소드
+		class LocalInner{//외부클래스> 메소드 >로컬이너 클래스
 			
 		}
 	}
 	
-	public void sub() {
-		double pi=3.14;//지역변수 (local var)
-		System.out.println("str: "+str);
+	public void sub() {//외부클래스> 메소드.
+		
+		double pi=3.14;//메소드의 지역변수 (local var)
+		System.out.println("sub에서 출력한 str : "+str);
 		System.out.println("pi: "+pi);
 		
-		class LocalInner{//local inner class
+		class LocalInner{//외부클래스 > 메소드 > local inner class
 			
 				String lstr = "LocalInner의 멤버변수$$$";
-				void foo() {
+				void foo() {// 외부클래스> 메소드 >로컬이너 클래스의 메소드
+					int a=1;
+					
 					//str
-					System.out.println("str="+str);
+					System.out.println("LocalInner 에서 출력str="+str);
 					//lstr
 					System.out.println("lstr="+lstr);
 					//pi
@@ -31,9 +34,9 @@ public class Local {
 					//pi=5.12;//err발생 : 로컬이너 클래스 안에서는 final이 아닌 지역변수 접근불가.
 								//ㄴ출력은 가능하나 값 변경할 수 없다.
 				}						
-		}
+		}//------------------------------로컬이너 클래스끝
 		/*로컬이너 클래스는 자기가 속한 메서드 안에서 객체생성해야 함.
-		 * 또한 클래스가 구성된 후에 객체 생성이 가능함.
+		 * 또한 이너클래스가 구성된 후에  이너클래스의 객체 생성이 가능함.
 		 * 
 		 */
 		LocalInner li=new LocalInner();
