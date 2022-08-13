@@ -5,13 +5,13 @@ public class Outer {
 			int a=1;
 	 static int b=2;
 	 
-	 void print() {
-		 Inner i = new Inner();
+	 void print() {//메소드
+		 Inner i = new Inner();//생성자
 		 System.out.println(i.c);
 		 
 		 Outer.Inner oi = this.new Inner();
 		 System.out.println(oi.c);
-	 }
+	 }//////////////////////////////메소드 끝
 	 
 	 class Inner{//Inner Member class = non-static
 		 int c=3;

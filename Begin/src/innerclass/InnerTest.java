@@ -7,6 +7,7 @@ class OutClass{
 	
 
 	
+	
 	class InClass{
 		int inNum = 100;
 		
@@ -17,12 +18,12 @@ class OutClass{
 //		
 //		static void sTest() {
 //			
-//		}
-		public void usingClass() {
-			InClass.inTest();
 		}
-	}
+		public void usingClass() {
+			inClass.inTest();
+		}
 	
+		InClass inClass= new InClass();
 }
 public class InnerTest {
 
@@ -31,6 +32,8 @@ public class InnerTest {
 		OutClass outClass = new OutClass();
 		System.out.println("외부클래스 이용해 내부클래스 기능을 호출해요");
 		outClass.usingClass();
+		OutClass.InClass i=outClass.new InClass();
+		System.out.println(outClass.inClass.inNum);
 
 	}
 

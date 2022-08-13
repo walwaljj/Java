@@ -19,8 +19,8 @@ public class InnerClassTest {
 		Outer oi = new Outer();
 		Outer.Inner oii=oi.new Inner();
 		//위 두 생성자를 합쳐 구현가능하다.
-		//Outer.Inner oi2=new Outer().new Inner();
-		System.out.println(oii.c);
+		Outer.Inner oi2=new Outer().new Inner();
+		System.out.println(oi2.c);
 		oii.sub();
 		
 		
@@ -36,7 +36,7 @@ public class InnerClassTest {
 		
 		//static
 		System.out.println(Outer.SInner.e);
-		Outer.SInner.bar();
+		os.bar();
 		
 		
 		

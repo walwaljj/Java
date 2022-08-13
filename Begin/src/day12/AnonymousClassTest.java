@@ -3,7 +3,7 @@ package day12;
 class MyObject extends Object{
 	
 	@Override
-	public String toString() {
+	public String toString() {// to
 		return "I am MyObject";
 	}
 }
