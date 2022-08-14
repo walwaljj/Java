@@ -98,7 +98,7 @@ public class java4 {
 		//문자열 참조변수 str이 "yes"일 때 true인 조건식
 
 		String str = "yes";
-		
+		System.out.println("yes".equals(str));
 		result = str!="yes" ? false : true;
 		System.out.println(result);
 		//----------------------------------------
@@ -149,14 +149,14 @@ public class java4 {
 		}System.out.println("최종 숫자 : "+j);
 		System.out.println("총 합 : "+ asum);
 		//-----------------------------------------------
-		int asum2=0;
+
 		int j2=0;
 		int k=0;
 		
 		for(;;j2++) {
 			
 			if(j2%2==0) {
-				k+=j2*a;
+				k+=-j2;
 			}else{
 				k+=j2;
 			}
@@ -165,6 +165,20 @@ public class java4 {
 			}
 		}System.out.println("최종숫자 : "+j2);
 		System.out.println("총 합 : "+k);
+		//-----------------------------------------
+		int sum1 = 0; // 총합을 저장할 변수
+		int s = 1; // 값의 부호를 바꿔주는데 사용할 변수
+		int num = 0;
+		for(int i9=1;true; i9++, s=-s) {
+			num = s * i9; // i (s) . 와 부호 를 곱해서 더할 값을 구한다
+			sum1 += num;
+			if(sum1 >=100) // 100 . 총합이 보다 같거나 크면 반복문을 빠져 나간다
+				break;
+				}
+				System.out.println("num="+num);
+				System.out.println("sum="+sum1);
+
+
 		//다음 for문을 while문으로 변경하세요
 		
 		for(int i3 = 0; i3<=10; i3++) {
