@@ -1,6 +1,6 @@
 package java200;
 
-public class java4 {
+public class day5 {
 
 	public static void main(String[] args) {
 		//int 형 변수 x가 10보다 크고 20보다 작을때 true

@@ -1,6 +1,6 @@
 package java200;
 
-public class Java1 {
+public class day3 {
 
 	public static void main(String[] args) {
 		String regNo;

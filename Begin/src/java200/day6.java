@@ -1,6 +1,6 @@
 package java200;
 
-public class Java4_6 {
+public class day6 {
 
 	public static void main(String[] args) {
 		//Math.random()을 이용해 1-6사이의 임의의 정수를 value에 저장하는 코드

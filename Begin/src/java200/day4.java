@@ -1,6 +1,6 @@
 package java200;
 
-public class Exercise3 {
+public class day4 {
 
 	public static void main(String[] args) {
 //		아래는 변수 의 값에 따라 num ‘0’ 양수 음수 을 출력하는 코드이다 삼항 연산 .
