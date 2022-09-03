@@ -1,7 +1,7 @@
 package collection.hashSet;
 import java.util.*;
 public class HeshSetTest {
-
+ 
 	public static void main(String[] args) {
 		HashSet<String> hashSet = new HashSet<String>();
 		hashSet.add(new String("임정순"));
