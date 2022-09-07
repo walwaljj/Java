@@ -1,4 +1,4 @@
-package day11;
+package jungsuk.jungsuk_200;
 import java.util.*;
 public class java200_5_13 {
 

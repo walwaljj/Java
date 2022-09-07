@@ -1,4 +1,4 @@
-package day11;
+package jungsuk;
 
 interface Parseable{
 	public abstract void parse(String fileName);
