@@ -16,7 +16,7 @@ class MyTv{
 //			this.isPowerOn = !isPowerOn;
 //	}
 		isPowerOn = !isPowerOn;
-	
+	}
 	void volumeUp() {
 		if (this.volume < MAX_VOLUME) {
 			this.volume++;
