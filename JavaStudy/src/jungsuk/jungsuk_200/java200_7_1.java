@@ -51,7 +51,8 @@ public class java200_7_1 {
 
 	public static void main(String[] args) {
 		SutdaDeck deck = new SutdaDeck();
-		
+		SutdaCard2 card = new SutdaCard2(1, true);
+
 		System.out.println(deck.pick(0));
 		System.out.println(deck.pick());
 		deck.shuffle();
