@@ -32,7 +32,7 @@ class SutdaCard4 {
 	*/
 		if( obj instanceof SutdaCard4 ) {
 			SutdaCard4 cn = (SutdaCard4)obj;
-			if(this.num == cn.num) {
+			if(this.num == cn.num  && isKwang == cn.isKwang) {
 				return true;
 			}else {
 				return false;
