@@ -17,7 +17,7 @@ class SutdaCard4 {
 	int num;
 	boolean isKwang;
 	
-	SutdaCard4() {
+	SutdaCard4() { 
 		this(1, true);
 	}
 	SutdaCard4(int num, boolean isKwang) {
