@@ -30,10 +30,15 @@ class SutdaCard4 {
 	(1) 매개변수로 넘겨진 객체의num, isKwang  과
 	멤버변수 을 비교하도록 오버라이딩 하시오 num, isKwang .
 	*/
-		if( this.num == ) {
-			
-		}
-		return (this == obj);
+		if( obj instanceof SutdaCard4 ) {
+			SutdaCard4 cn = (SutdaCard4)obj;
+			if(this.num == cn.num) {
+				return true;
+			}else {
+				return false;
+			}
+		}return false;
+		
 	}
 	public String toString() {
 		return num + ( isKwang ? "K":"");
