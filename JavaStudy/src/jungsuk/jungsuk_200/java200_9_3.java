@@ -3,7 +3,7 @@ package jungsuk.jungsuk_200;
 public class java200_9_3 {
 
 	public static void main(String[] args) {
-		String fullPath = "c:\\jdk1.8\\wort\\PathSeparateTest.java";
+		String fullPath = "c:\\jdk1.8\\work\\PathSeparateTest.java";
 		String path = "";
 		String fileName = "";
 		
