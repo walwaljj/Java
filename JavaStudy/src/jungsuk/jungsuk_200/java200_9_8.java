@@ -2,7 +2,8 @@ package jungsuk.jungsuk_200;
 
 public class java200_9_8 {
 	public static double round(double d, int n) {
-		return Math.round(Math.pow(d,n));
+		return Math.round(d*Math.pow(10,n))/Math.pow(10,n);
+		
 	}
 	public static void main(String[] args) {
 		System.out.println(round(3.1415,1));
