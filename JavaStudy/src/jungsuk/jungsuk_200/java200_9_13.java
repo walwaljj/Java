@@ -13,12 +13,13 @@ public class java200_9_13 {
 	static int stringCount(String src, String key, int pos) {
 		int count = 0;
 		int index = 0;
+		
 		if (key == null || key.length() == 0)
 		return 0;
 		else {
-			for(int i = 0 ; i < src.length() ; i ++, pos ++) {
-				index = src.indexOf(key);
-				
+			for(int i = 0 ; i < src.length() ; i ++) {
+				index = src.indexOf(key,pos);
+				pos = index + key.length();
 				if(index != -1) {
 					count ++;
 				}else {
