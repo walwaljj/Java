@@ -18,11 +18,22 @@ public class java200_11_1 {
 		list2.add(5);
 		list2.add(6);
 		
+		hap.addAll(list2);
+		hap.retainAll(list1);
+		kyo.addAll(hap);
+		hap.addAll(list1);
+		hap.removeAll(kyo);
+		cha.addAll(hap);
+		hap.addAll(list2);
+		
+		
+		
 		System.out.println("list1="+list1);
 		System.out.println("list2="+list2);
 		System.out.println("kyo="+kyo);
 		System.out.println("cha="+cha);
 		System.out.println("hap="+hap);
+		
 	}
 
 }
