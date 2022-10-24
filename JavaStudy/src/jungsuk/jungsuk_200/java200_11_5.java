@@ -1,12 +1,22 @@
 package jungsuk.jungsuk_200;
 import java.util.*;
-class Student {
-	
+class Student implements Comparable{
+
 	String name;
 	int ban;
 	int no;
 	int kor, eng, math;
 	
+	@Override
+	public int compareTo(Object o) {
+		if(o instanceof Student) {
+			Student tmp = (Student) o;
+			
+			return name.compareTo(tmp.name);
+		}else {
+			return -1;
+		}
+	}
 	Student(String name, int ban, int no, int kor, int eng, int math) {
 		
 	this.name = name;
@@ -36,7 +46,7 @@ class Student {
 	}
 }
 public class java200_11_5 {
-
+	
 	public static void main(String[] args) {
 		ArrayList list = new ArrayList();
 		list.add(new Student("홍길동",1,1,100,100,100)); 
@@ -46,8 +56,9 @@ public class java200_11_5 {
 		list.add(new Student("안자바",1,5,60,100,80)); 
 		Collections.sort(list);
 		Iterator it = list.iterator();
+		
 		while(it.hasNext())
-		System.out.println(it.next());
+			System.out.println(it.next());
 
 	}
 
