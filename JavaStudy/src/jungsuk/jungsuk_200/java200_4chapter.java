@@ -12,11 +12,14 @@ public class java200_4chapter {
 		int i = 0;
 		
 		while(i<=10) {
-			for(int j = 0 ; j <= i ; j ++ ){
-			System.out.print("*");
+			int j = 0 ; 
+			while (j <= i) {
+				System.out.print("*");
+				j++;
 			}
 			System.out.println();
 			i++;
+			
 		}
 		
 		for(int j = 1 ; j < 6 ; j ++) {
