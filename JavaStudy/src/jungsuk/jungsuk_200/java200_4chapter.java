@@ -18,6 +18,14 @@ public class java200_4chapter {
 			System.out.println();
 			i++;
 		}
+		
+		for(int j = 1 ; j < 6 ; j ++) {
+			for(int k = 6 ; k > 0 ; k -- ) {
+				if(j+k==6) {
+					System.out.println(j+","+k);
+				}
+			}
+		}
 
 	}
 
