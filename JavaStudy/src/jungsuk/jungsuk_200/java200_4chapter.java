@@ -8,7 +8,7 @@ public class java200_4chapter {
 				System.out.print("*");
 			System.out.println();
 		}
-		
+		 
 		int i = 0;
 		
 		while(i<=10) {
