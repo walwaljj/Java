@@ -12,6 +12,7 @@ public class Student {
 	public Student(String name, int... marks) {
 		this.name = name;
 		this.marks = marks;
+
 	}
 
 	public int getNumberOfMarks() {

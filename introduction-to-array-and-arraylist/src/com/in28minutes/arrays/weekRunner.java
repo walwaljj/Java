@@ -8,6 +8,7 @@ public class weekRunner {
 		for(String day : daysOfWeek) {
 			if (day.length() > dayWithMostCharacters.length()) {
 				dayWithMostCharacters = day;
+
 			}
 		}
 		System.out.println(dayWithMostCharacters);
@@ -20,6 +21,7 @@ public class weekRunner {
 //			dayArr[j] = daysOfWeek[i];
 			System.out.println(daysOfWeek[i]);
 		}
+
 //		System.out.println(Arrays.toString(dayArr));
 	}
 
