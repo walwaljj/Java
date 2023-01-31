@@ -24,6 +24,8 @@ public class StudentRunner {
 		System.out.println("minimumMark : " + minimumMark);
 		System.out.println("average : " + average);
 
+		System.out.println(student1);
+
 	}
 
 }
