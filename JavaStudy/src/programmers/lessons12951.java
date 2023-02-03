@@ -1,7 +1,5 @@
 package programmers;
 
-import java.util.Arrays;
-
 public class lessons12951 {
 
 	public static void main(String[] args) {
@@ -11,13 +9,11 @@ public class lessons12951 {
 		 * "for the last week" "For The Last Week"
 		 */
 
-//		String s = "3people33 unFold1 1dlowed me";
-		String s = " for the last weDDek ";
-//		String s = "      the last weDDek";
+
+		String s = " FFor the last weDDek ";
+
 		String[] str = s.split(" ");
 		String answer = "";
-		System.out.println(str.length);
-		System.out.println(Arrays.toString(str));
 
 		for (int i = 0; i < str.length; i++) {
 
@@ -28,13 +24,11 @@ public class lessons12951 {
 					? str[i].toUpperCase().charAt(0) + str[i].toLowerCase().substring(1)
 					: (str[i] = firstChar == ' ' ? " " : firstChar + str[i].toLowerCase().substring(1));
 
-
 			answer += str[i];
 
 			if (i != str.length - 1) {
 				answer += " ";
 			}
-
 
 		}
 

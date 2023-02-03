@@ -1,7 +1,5 @@
 package programmers;
 
-import java.util.Arrays;
-
 public class lessons12952_2 {
 
 	public static void main(String[] args) {
@@ -11,37 +9,32 @@ public class lessons12952_2 {
 		 * "for the last week" "For The Last Week"
 		 */
 
-//		String s = "3people33 unFold1 1dlowed me";
-		String s = " for the last weDDek ";
-//		String s = "      the last weDDek";
-		String[] str = s.split(" ");
+		String s = "   FFOr     the last week   ";
 		String answer = "";
-		System.out.println(str.length);
-		System.out.println(Arrays.toString(str));
+		s = s.toLowerCase();
+		
+		char[] ch = new char[s.length()];
 
-		for (int i = 0; i < str.length; i++) {
+		for (int i = 0; i < s.length(); i++) {
 
-			char firstChar;
-			firstChar = str[i].length() != 0 ? str[i].charAt(0) : ' ';
+			ch[i] = s.charAt(i);
+			ch[0] = s.toUpperCase().charAt(i);
+			
+			if (ch[i] == ' ') {
 
-			str[i] = (firstChar >= 'A' && firstChar <= 'Z' || firstChar >= 'a' && firstChar <= 'z')
-					? str[i].toUpperCase().charAt(0) + str[i].toLowerCase().substring(1)
-					: (str[i] = firstChar == ' ' ? " " : firstChar + str[i].toLowerCase().substring(1));
+				if (i != s.length() - 1) {
+					ch[i + 1] = s.toUpperCase().charAt(i + 1);
+					answer += " ";
+					i++;
+				} else {
+					answer += " ";
+				}
 
-
-			answer += str[i];
-
-			if (i != str.length - 1) {
-				answer += " ";
 			}
 
+			answer += ch[i];
 
 		}
-
-		if (s.charAt(s.length() - 1) == ' ') {
-			answer += " ";
-		}
-
 		System.out.println(answer);
 
 	}
