@@ -2,7 +2,7 @@ package programmers;
 
 import java.util.Arrays;
 
-public class lessons12951 {
+public class lessons12952_2 {
 
 	public static void main(String[] args) {
 		/*
