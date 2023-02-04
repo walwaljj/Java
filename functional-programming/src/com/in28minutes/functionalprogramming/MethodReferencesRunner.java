@@ -30,10 +30,18 @@ public class MethodReferencesRunner {
 		
 		System.out.println("-----------");
 		Integer max2 = List.of(23,45,67,34).stream()
-							.filter(n -> n % 2 == 0)
-							.max((n1,n2) -> Integer.compare(n1, n2))
+				.filter(MethodReferencesRunner::isEven)
+				.max(MethodReferencesRunner::numCompare)// == Integer::compare
 							.orElse(0);// Default 값을 0으로.
 		System.out.println(max2);
+	}
+
+	public static boolean isEven(Integer integer) {
+		return integer % 2 == 0;
+	}
+
+	public static Integer numCompare(Integer integer1, Integer integer2) {
+		return Integer.compare(integer1, integer2);
 	}
 
 }

@@ -52,8 +52,11 @@ class NumberSquareMapper implements Function<Integer, Integer> { // 변형해줌
 public class LambdaBehindTheScreensRunner {
 
 	public static void main(String[] args) {
+		Predicate<? super Integer> evenPredicate = extracted();
+		Predicate<? super Integer> oddPredicate = n -> n % 2 == 1;
+
 		List.of(23, 43, 34, 45,36,48).stream()
-				.filter(n -> n % 2 == 0).map(n -> n * n).forEach(e -> System.out.println(e));
+				.filter(evenPredicate).map(n -> n * n).forEach(e -> System.out.println(e));
 
 		
 		List.of(23, 43, 34, 45, 36, 48).stream()
@@ -61,6 +64,10 @@ public class LambdaBehindTheScreensRunner {
 
 		
 
+	}
+
+	private static Predicate<? super Integer> extracted() {
+		return n -> n % 2 == 0;
 	}
 
 }
