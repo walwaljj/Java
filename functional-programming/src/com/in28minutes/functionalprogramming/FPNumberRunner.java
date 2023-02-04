@@ -19,11 +19,14 @@ public class FPNumberRunner {
 
 	// functional programming (함수형 프로그래밍) : 무엇을 할 것인지 ? 변수의 변이를 피함.
 	private static int fpSUm(List<Integer> numbers) {
-		return numbers.stream().reduce(0, (number1, number2) -> number1 + number2);
-										// ㄴ 시작 index ㄴ 함수 정의		ㄴ 숫자의 쌍을 더함.
-										//	num1 = 0 , num2 = 4 -> 4
-										// num1 = 4 , num2 = 6 -> 10
-										// num1 = 10 , num2 = 13 -> 23  ... 순서인듯?
+		return numbers.stream().reduce(0, (number1, number2) -> {
+									// ㄴ base 숫자 ㄴ 매개변수		
+			System.out.println(number1 + " " + number2);
+			//	num1 = 0 , num2 = 4 -> 4
+			// num1 = 4 , num2 = 6 -> 10
+			// num1 = 10 , num2 = 13 -> 23  ... 순서인듯?
+			return number1 + number2; });
+					//ㄴ 숫자의 쌍을 더함. / 단일 코드면 { return ~~ ; } 생략 가능.
 	}
 
 	// procedure programming (절차적 프로그래밍) : 무엇을 어떻게 할 것인지 ? 변수의 변이가 이렁남.
