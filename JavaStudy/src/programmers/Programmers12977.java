@@ -13,15 +13,16 @@ public class Programmers12977 {
 		 */
 		int[] nums;
 		int answer = -1;
-
-		// 소수구하기
-
-		for (int i = 1; i < 100; i++) {
-
-			if (i - 1 != 0 && 100 % (i - 1) == 0) {
-				System.out.println(i);
-
+		int num = 50;
+		// 소수구하기 : 1과 자신의 수 제외하고 떨어지지않는 수, 나머지가 생기는 수
+		int prime = 2;
+		while (prime > num) {
+			if (num % prime == 0) {
+				System.out.println(prime);
+			} else {
+				prime++;
 			}
+
 		}
 	}
 
