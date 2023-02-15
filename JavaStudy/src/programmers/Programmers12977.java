@@ -19,9 +19,8 @@ public class Programmers12977 {
 		while (prime > num) {
 			if (num % prime == 0) {
 				System.out.println(prime);
-			} else {
-				prime++;
 			}
+			prime++;
 
 		}
 	}
