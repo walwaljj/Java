@@ -13,8 +13,6 @@ public class weekRunner {
 		}
 		System.out.println(dayWithMostCharacters);
 				
-				//if진짜지랄하네..^^// 휴지가져다놔도 지랄.. 어쩌다 그런거가지고 쿠사리를 주네
-		// 그러는 너는 왜 항상 두세칸만 남겨두고 안채워놓냐..?^^ 니나 잘해
 //		String[] dayArr = new String[daysOfWeek.length];
 //		int j = 0;
 		for (int i = daysOfWeek.length - 1; i >= 0; i--/* ,j++ */) {
